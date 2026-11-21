@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>autoclip Terms and Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600&display=swap">
+<style>
+  /* Layout: single readable column, two sections reachable by #terms and #privacy */
+  :root {
+    --bg: #f6f7f9; --fg: #1b1e25; --muted: #5a606d; --rule: #dde0e6; --accent: #c8143f;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --head: "Space Grotesk", "Inter", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #14161c; --fg: #e8eaef; --muted: #a0a6b3; --rule: #2c3039; --accent: #ff4d6d; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #14161c; --fg: #e8eaef; --muted: #a0a6b3; --rule: #2c3039; --accent: #ff4d6d; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body); }
+  main { max-width: 680px; margin: 0 auto; padding-block: 48px 72px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1, h2 { font-family: var(--head); text-wrap: balance; line-height: 1.2; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.4rem; margin: 48px 0 8px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1rem; margin: 24px 0 4px; }
+  p, li { margin: 0 0 10px; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 24px; }
+  nav { display: flex; gap: 16px; flex-wrap: wrap; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>autoclip</h1>
+  <p class="meta">Last updated: November 21, 2026</p>
+  <p>autoclip is a personal, non-commercial tool. It turns long gameplay videos into short vertical edits and, after the account owner approves each one, uploads it to that owner's own TikTok account.</p>
+  <nav><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></nav>
+
+  <h2 id="terms">Terms of Service</h2>
+  <h3>Who can use it</h3>
+  <p>autoclip is used only by its developer, on the developer's own TikTok account. It is not offered to the public and no one else can sign up.</p>
+  <h3>What it does on TikTok</h3>
+  <p>With your permission, autoclip sends a video you approved to your TikTok account. Every video is reviewed and approved by you before it is sent. autoclip never posts, likes, follows or comments on its own.</p>
+  <h3>Your responsibilities</h3>
+  <p>You are responsible for the videos you approve and must follow TikTok's Terms of Service and Community Guidelines, including the rules about content you do not own.</p>
+  <h3>No warranty</h3>
+  <p>autoclip is provided as is, without warranty of any kind. The developer is not liable for any loss caused by its use.</p>
+  <h3>Changes</h3>
+  <p>These terms may change. The date at the top of this page shows the latest version.</p>
+
+  <h2 id="privacy">Privacy Policy</h2>
+  <h3>Data autoclip receives from TikTok</h3>
+  <ul>
+    <li>Your basic account info (open ID, display name and avatar), to confirm which account is connected.</li>
+    <li>An access token that allows uploading videos to your account.</li>
+  </ul>
+  <h3>Where it is stored</h3>
+  <p>The access token is stored only on your own computer, in the operating system's credential store. autoclip has no server and no database. Videos are processed locally and sent directly from your computer to TikTok.</p>
+  <h3>Sharing</h3>
+  <p>autoclip does not sell, rent or share any data with anyone. It does not use analytics, ads or tracking.</p>
+  <h3>Removing access and deleting data</h3>
+  <p>You can disconnect autoclip at any time in the TikTok app under Settings and privacy, Security and permissions, Apps and services. Deleting the stored token from your computer removes all data autoclip kept.</p>
+  <h3>Children</h3>
+  <p>autoclip is not intended for anyone under 18.</p>
+</main>
+</body>
+</html>
