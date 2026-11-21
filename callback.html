@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>autoclip login</title>
+<style>
+  :root { --bg: #f6f7f9; --fg: #1b1e25; --muted: #5a606d; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14161c; --fg: #e8eaef; --muted: #a0a6b3; color-scheme: dark } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 560px; margin: 0 auto; padding: 48px 16px; }
+  code { word-break: break-all; color: var(--muted); }
+</style>
+</head>
+<body>
+<h2>Voltando para o autoclip…</h2>
+<p id="msg">Se nada acontecer, volte ao terminal e cole o endereço desta página.</p>
+<p><code id="url"></code></p>
+<script>
+  // TikTok does not accept localhost redirect URIs, so this page forwards the
+  // authorization code to the autoclip login running on this computer.
+  document.getElementById("url").textContent = location.href;
+  if (location.search) location.replace("http://127.0.0.1:8765/callback/" + location.search);
+</script>
+</body>
+</html>
